@@ -1,6 +1,6 @@
 import csv
 from distutils.command.upload import upload
-from doctest import Exmaple
+#from doctest import Exmaple
 import numpy as np
 import pandas as pd
 import seaborn as sns
