@@ -3,7 +3,7 @@ from distutils.command.upload import upload
 #from doctest import Exmaple
 import numpy as np
 import pandas as pd
-import seaborn as sns
+#import seaborn as sns
 import streamlit as st
 from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
@@ -17,8 +17,8 @@ This App is developed by Shahzad Called **EDA APP**
 with st.sidebar.header("Upload Your Dataset (.csv)"):
     uploaded_file=st.sidebar.file_uploader("Upload Your File",type=['csv'])
 
-    df=sns.load_dataset('titanic')
-    st.sidebar.markdown("[Example CSV file](https://www.kaggle.com/louise2001/quantum-physics-articles-on-arxiv-1994-to-2009/download)")
+  #  df=sns.load_dataset('titanic')
+   # st.sidebar.markdown("[Example CSV file](https://www.kaggle.com/louise2001/quantum-physics-articles-on-arxiv-1994-to-2009/download)")
 
 if uploaded_file is not None:
         @st.cache
